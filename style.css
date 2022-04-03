@@ -567,9 +567,13 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    .home__button > button{
+        width: 90%;
+    }
 
     .home__img{
         display: none;
+        visibility: hidden;
     }
     .deco1{
         top: 40px;
@@ -625,6 +629,9 @@ footer{
     .deco4{
         top: -10px;
         width: 50%;
+    }
+    .home{
+        display:inherit;
     }
 }
 
