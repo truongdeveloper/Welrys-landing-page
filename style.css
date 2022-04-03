@@ -145,7 +145,7 @@ button{
 }
 .list__item{
     font-size: var(--medium-font-size);
-    font-weight: var(--bold-style);
+   
     position: relative;
     width: 80px;
     text-align: center;
@@ -160,7 +160,7 @@ button{
     bottom: -1.8rem;
     width: 0%;
     background-color: #B39700;
-    height: 4px;
+    height: 3px;
     opacity: 0.8;
     z-index: 10;
     transition: all 0.5s ease;
@@ -170,6 +170,9 @@ button{
 }
 .list__item:hover .menu-line{
     width: 100%;
+}
+.btn__menu{
+    display: none;
 }
 .home__img{
     /* width: 45%; */
@@ -427,5 +430,203 @@ footer{
     font-size: var(--medium-font-size);
     color: var(--text-color);
     text-align: center;
+}
+@media screen and (max-width: 1160px){
+    :root{
+    --big-font-size: 3.8rem;
+    --h1-font-size: 3.3rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.4rem;
+    --medium-font-size: 1rem;
+    --small-font-size: 1rem;
+    }
+    .home__img{
+        width: 600px;
+    }
+    .container{
+        padding: 2rem 80px;
+    }
+    .about-us__container{
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .button1,
+    .button2,
+    .button3{
+        padding: 1rem 2rem;
+    }
+    .wn-btn{
+        padding: 0;
+    }
+    .btn__Discovery{
+        padding: 0.8rem;
+    }
+}
+@media screen and (max-width: 1030px){
+    .nav > img{
+        filter: blur(3px);
+        width: 500px;
+    }
+    .home__container{
+        width: auto;
+    }
+    .home__img-none{
+        display: none;
+    }
+    .container{
+        padding: 2rem 50px;
+    }
+    .list__item{
+        width:auto;
+    }
+    .services-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services-box1{
+        width: 45%;
+    }
+    .about-us__content{
+        width: 45%;
+    }
+    .ab-us__title > h1{
+        font-size: var(--h1-font-size);
+    }
+    .banner-content{
+        top: 30%;
+    }
+    .ct-img{
+        width: 38%;
+    }
+    .category-img{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 860px){
+    :root{
+        --big-font-size: 3.4rem;
+        --h1-font-size: 3rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.2rem;
+        --medium-font-size: 1rem;
+        --small-font-size: 1rem;
+    }
+    .nav__list{
+        display: none;
+    }
+    .btn__login{
+        display: none;
+    }
+    .btn__menu{
+        display: block;
+        background-color:rgba(18, 18, 18, 0.00);
+        width: 30px;
+    }
+    .container{
+        padding: 2rem 40px;
+    }
+    .about-us__container{
+        flex-direction: column;
+    }
+    .about-us__img > img{
+        width: 100%;
+        height: 650px;
+        object-fit: cover;
+    }
+    .about-us__content,
+    .about-us__img{
+        width: 90%;
+    }
+    .banner-content{
+        gap: 10px;
+        padding: 0 30px;
+    }
+    .banner-bgr{
+        height: 480px;
+        object-fit: cover;
+    }
+
+}
+@media screen and (max-width: 620px){
+    :root{
+        --big-font-size: 3rem;
+        --h1-font-size: 3rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.2rem;
+        --medium-font-size: 1rem;
+        --small-font-size: 1rem;
+    }
+    /* .button1,
+    .button2,
+    .button3{
+        width: 1005;
+    } */
+    .home__button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home__button > button{
+        width: 95%;
+
+    }
+    .home__img{
+        display: none;
+    }
+    .deco1{
+        top: 40px;
+        width: 60%;
+    }
+    .about-us__content,
+    .about-us__img{
+        width: 100%;
+    }
+    .ab-us__btn > button{
+        width: 95%;
+    }
+    .ct-img{
+        width: 42%;
+    }
+    .ct-btn > button{
+        width: 95%;
+    }
+    .services-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-box1{
+        width: calc(75% + 60px);
+    }
+    .container{
+        padding: 1.5rem 25px;
+    }
+    .wn-container{
+        flex-direction: column;
+    }
+    .what-new1{
+        width: 100%;
+    }
+    .footer-content{
+        display: none;
+    }
+    .footer-menu > .logo{
+        text-align: center;
+    }
+    .footer-list{
+        justify-content: center;
+    }
+    .footer-copyright{
+        height: 4rem;
+        line-height: 4rem;
+    }
+    .deco3{
+        bottom: -7%;
+        width: 80%;
+        left: 11%;
+    }
+    .deco4{
+        top: -10px;
+        width: 50%;
+    }
 }
 
