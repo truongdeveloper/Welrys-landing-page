@@ -633,5 +633,11 @@ footer{
     .home{
         display:inherit;
     }
+    .home__number-content{
+        padding-right: 0.8rem;
+    }
+    .home__number1{
+        gap: 1.5rem 1rem;
+    }
 }
 
