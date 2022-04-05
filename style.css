@@ -194,6 +194,12 @@ button{
 .btn__menu{
     display: none;
 }
+#menu-mobile{
+    display: none;
+}
+.over-lay{
+    display: none;
+}
 .home__img{
     /* width: 45%; */
     position: absolute;
@@ -390,7 +396,7 @@ button{
 
 }
 .wn-title1{
-    margin: 4rem 0 3rem 0;
+    margin: 4rem 0 1rem 0;
     text-align: center;
 }
 .wn-title{
@@ -400,6 +406,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 1.125rem;
+    margin-top: 2rem;
     position: relative;
     width: 50%;
 }
@@ -455,20 +462,25 @@ footer{
 /* ========== ON TOP ========= */
 .on-top{
     display: none;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     position: fixed;
     text-align: center;
-    right: 30px;
-    bottom: 30px;
-    background-color: var(--lemon-color);
+    right: 40px;
+    bottom: 35px;
+    background-color: var(--footer-color2);
     cursor: pointer;
     border:1px solid var(--lemon-color);
     border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.on-top:hover{
+    bottom: 40px;
+    background-color: #B39700;
 }
 .on-top > img{
     width: 20px;
-    margin-top: 12px;
+    margin-top: 15px;
     transform: rotate(-90deg);
 }
 @media screen and (max-width: 1160px){
@@ -554,6 +566,17 @@ footer{
     }
     .nav__list{
         display: none;
+        /* position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--body-color);
+        z-index: 1; */
+    }
+    .list__item{
+        z-index: 2;
+    }
+    .menu-line{
+        display: none;
     }
     .btn__login{
         display: none;
@@ -563,7 +586,9 @@ footer{
         background-color:rgba(18, 18, 18, 0.00);
         width: 30px;
         float: right;
+        cursor: pointer;
     }
+
     .container{
         padding: 2rem 40px;
     }
@@ -678,6 +703,20 @@ footer{
     }
     .home__number1{
         gap: 1.5rem 1rem;
+    }
+    .home__number{
+        justify-content: center;
+        padding-top: 1.8rem;
+    }
+    .on-top{
+        width: 3rem;
+        height: 3rem;
+        right: 30px;
+        bottom: 25px;
+    }
+    .on-top > img{
+        width: 20px;
+        margin-top: 12px;
     }
 }
 
