@@ -105,14 +105,26 @@ button{
     background-color: rgba(179, 151, 0, 0.09);
     padding: 1.3rem 2.4rem;
     border: 2px solid var(--lemon-color);
+    transition: all 0.3s ease;
+}
+.button1:hover{
+    color: white;
+    background-color: var(--lemon-color);
+    border-radius: 12px;
 }
 .button2{
     font-size:var(--medium-font-size);
     font-weight: var(--bold-style);
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: var(--lemon-color);
     border: 2px solid var(--lemon-color);
     padding: 1.3rem 2.4rem;
+    transition: all 0.3s ease;
+}
+.button2:hover{
+    color: white;
+    background-color: rgba(179, 152, 0, 0.284);
+    border-radius: 12px;
 }
 .button3{
     background-color: rgba(179, 151, 0, 0.00);
@@ -121,10 +133,19 @@ button{
     font-weight: var(--bold-style);
     line-height: 150%;
     letter-spacing: 0.2px;
+    transition: all 0.3s ease;
+}
+.button3:hover{
+    color: rgb(221, 221, 221);
 }
 .button3 > img{
     margin-left: 10px;
     width: 8px;
+    transition: all 0.5s ease;
+}
+.button3:hover > img{
+    width: 10px;
+    transform: rotate(180deg);
 }
 
 /* ===== HEADER NAV ====== */
@@ -149,7 +170,6 @@ button{
     position: relative;
     width: 90px;
     text-align: center;
-    line-height: 5rem;
 }
 .list__item > a{
     color: var(--text-color);
@@ -430,6 +450,26 @@ footer{
     font-size: var(--medium-font-size);
     color: var(--text-color);
     text-align: center;
+}
+
+/* ========== ON TOP ========= */
+.on-top{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    text-align: center;
+    right: 30px;
+    bottom: 30px;
+    background-color: var(--lemon-color);
+    cursor: pointer;
+    border:1px solid var(--lemon-color);
+    border-radius: 8px;
+}
+.on-top > img{
+    width: 20px;
+    margin-top: 12px;
+    transform: rotate(-90deg);
 }
 @media screen and (max-width: 1160px){
     :root{
