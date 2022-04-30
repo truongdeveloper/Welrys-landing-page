@@ -14,7 +14,8 @@
           <a href="#" class="nav__logo">
             <p class="logo">Welrys</p>
           </a>
-          <div class="nav__menu">
+          <input type="checkbox" id="menu-mobile"/>
+          <label for="menu-mobile"class="nav__menu">
             <ul class="nav__list flex-box subtitle">
               <li class="list__item">
                 <a href="#home">Home</a>
@@ -41,10 +42,9 @@
                 <div class="menu-line"></div>
               </li>
             </ul>
-          </div>
+          </label>
           <button class="btn__login button1">Log In</button>
-          <input type="checkbox" id="menu-mobile">
-          <label class="btn__menu" for = "menu-mobile">
+          <label for="menu-mobile" class="btn__menu">
             <img src="assets/img/btn/Icon-menu.png" alt="" />
           </label>
           <label for="menu-mobile" class="over-lay"></label>
@@ -326,10 +326,7 @@
     <div class="on-top" id="bttop">
       <img src="assets/img/btn/arrow.png" alt="Top" />
     </div>
-    <script
-      src="./assets/jquery/jquery.js"
-      type="text/javascript"
-    ></script>
+    <script src="./assets/jquery/jquery.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(function () {
         $(window).scroll(function () {
