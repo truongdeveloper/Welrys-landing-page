@@ -662,6 +662,12 @@ footer{
     .button3{
         width: 1005;
     } */
+    .list__item {
+        margin: 2rem 0;
+    }
+    .list__item > a{
+        font-size: var(--medium-font-size);
+    }
     
     .home__button{
         flex-direction: column;
