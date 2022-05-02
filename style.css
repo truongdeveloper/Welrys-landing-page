@@ -571,10 +571,10 @@ footer{
     }
     .nav__list{
         display: block;
-        margin-top: -56px;
-        
+        margin-top: -48px;
+        padding-top: 2rem;
         position: fixed;
-        width: 50%;
+        width: 45%;
         height: 100vh;
         text-align: center;
         background-color: var(--footer-color1);
@@ -663,7 +663,8 @@ footer{
         width: 1005;
     } */
     .list__item {
-        margin: 2rem 0;
+        font-family: var(--title-font);
+        margin: 3rem 0;
     }
     .list__item > a{
         font-size: var(--medium-font-size);
